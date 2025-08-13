@@ -1,5 +1,6 @@
 import React from 'react';
-import { UserPlus, FileText, Building2 } from 'lucide-react';
+import { UserPlus, FileText } from 'lucide-react';
+import logo from "../../screenshots/dana_logo.png"
 
 interface NavigationProps {
   currentPage: 'entry' | 'records';
@@ -10,14 +11,16 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, onPageChange }) =>
   return (
     <>
       {/* Company Header */}
-      <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-center space-x-4">
-            <div className="w-12 h-12 bg-white bg-opacity-20 rounded-xl flex items-center justify-center backdrop-blur-sm">
-              <Building2 className="w-7 h-7 text-white" />
-            </div>
-            <div className="text-center">
-              <h1 className="text-3xl font-bold tracking-wide">DANA</h1>
+      <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white shadow-md">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <div className="flex items-center justify-center gap-4">
+            <img
+              src={logo} // Your logo import
+              alt="Company Logo"
+              className="w-20 h-auto object-contain"
+            />
+            <div className="text-left">
+              <h1 className="text-3xl font-extrabold tracking-wide leading-tight">DANA</h1>
               <p className="text-blue-200 text-sm font-medium">Visitor Management System</p>
             </div>
           </div>
