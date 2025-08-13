@@ -11,7 +11,7 @@ app.use(express.json());
 // Middleware
 app.use(cors({
   origin: [, // for Vite local development
-    "https://visitor-log-system-uire.vercel.app/" // replace with your actual deployed frontend URL
+    "https://visitor-log-system-uire.vercel.app" // replace with your actual deployed frontend URL
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
