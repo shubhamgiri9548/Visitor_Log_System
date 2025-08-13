@@ -11,7 +11,7 @@ app.use(express.json());
 // Middleware
 const allowedOrigins = [
   "http://localhost:5173", // for Vite local dev
-  "https://visitor-log-system.vercel.app/" // deployed frontend 
+  "https://visitor-log-system.vercel.app" // deployed frontend 
 ];
 
 app.use(cors({
