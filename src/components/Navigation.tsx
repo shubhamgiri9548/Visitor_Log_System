@@ -45,7 +45,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, onPageChange }) =>
                 <img
                   src={logo}
                   alt="Company Logo"
-                  className="w-18 h-18 object-contain"
+                  className="w-[85px] h-[50px] object-contain"
                 />
               </div>
             </div>
